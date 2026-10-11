@@ -1,0 +1,27 @@
+Git & Collaboration — exercício pessoal
+Data: 2026-10-11
+
+origin: fork pessoal gutkedu/ai-engineering-from-scratch
+upstream: repositório original rohitg00/ai-engineering-from-scratch
+Branch de estudos: my-progress, criada a partir de origin/main
+
+Fluxo diário (execute na pasta course):
+  rtk git status
+  rtk git add learning-artifacts/00-setup/git-workflow.txt
+  rtk git commit -m "docs: update study progress"
+  rtk git push origin my-progress
+  rtk git log --oneline -5
+
+git add seleciona o conteúdo para o próximo commit.
+git commit salva uma versão no histórico local.
+git push envia os commits para o fork pessoal no GitHub.
+git log mostra o histórico das versões salvas.
+
+O .gitignore existente já exclui .venv/, .env, *.pt, *.pth
+e *.safetensors. Nenhum modelo ou segredo deve entrar no commit.
+
+Para usar o Python preparado na aula anterior, sem trocar o Node:
+  source /Users/eduardo.gutkoski/Documents/AIEngineeringFromStatch/.venv/bin/activate.fish
+  cd /Users/eduardo.gutkoski/Documents/AIEngineeringFromStatch/course
+
+O Node pessoal continua sendo gerenciado pelo nvm.
